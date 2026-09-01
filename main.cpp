@@ -1,7 +1,10 @@
 #include <iostream>
 #include <vector>
+#include<string>
 using namespace std;
 
+
+class Product;
 class Supplier
 {
     int SupplierID;
@@ -21,12 +24,25 @@ public:
         SupplierName = name;
     }
 
-    void supplyProduct();
-    void updateDetails();
+    void supplyProduct(Product product);
+    void updateDetails(string name){
+        SupplierName = name;
+    };
+
+    int getSupplierID(){
+        return SupplierID;
+    }
+
+    string getSupplierName()
+    {
+        return SupplierName;
+    }
+
+    vector<Product>
 };
 
-void Supplier ::supplyProduct()
-{
+void Supplier ::supplyProduct(Product product)
+{README.md
     string proName;
 
     cout << "Enter the product name : ";
