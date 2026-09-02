@@ -40,7 +40,7 @@ public:
     void DisplayProduct();
 };
 
-void Product :: DisplayProduct()
+void Product ::DisplayProduct()
 {
     cout << "Product ID   : " << ProductID << endl;
     cout << "Product Name : " << ProductName << endl;
@@ -83,6 +83,7 @@ public:
         return SupplierName;
     }
 
+    void displaySupplier();
 };
 
 void Supplier ::supplyProduct(Product product)
@@ -92,18 +93,40 @@ void Supplier ::supplyProduct(Product product)
     cout << "Successfull\n\n";
 }
 
+void Supplier ::displaySupplier()
+{
+    cout << "\nAll the products supply by " << getSupplierName() << " : \n";
 
+    if (products.empty())
+    {
+        cout << "\nNo Product available \n";
+        return;
+    }
+
+    for (int i = 0; i < products.size(); i++)
+    {
+        products[i].DisplayProduct();
+        cout << endl;
+    }
+
+}
 
 int main()
 {
     system("cls");
 
-    Supplier s1(1,"Kartik Bhand");
+    Supplier s1(1, "Kartik Bhand");
 
     Product p1(1000, 4, 4000, "Pan");
+    Product p2(1001, 10, 2000, "Shirt");
+
 
     s1.supplyProduct(p1);
+    s1.supplyProduct(p2);
 
     cout << "supplier : " << s1.getSupplierName() << endl;
+
+    s1.displaySupplier();
+    cout << endl;
     return 0;
 }
