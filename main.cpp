@@ -31,6 +31,10 @@ public:
     {
         return ProductID;
     }
+    int GetQuantaty()
+    {
+        return Quantaty;
+    }
 
     string GetProductName()
     {
@@ -108,7 +112,39 @@ void Supplier ::displaySupplier()
         products[i].DisplayProduct();
         cout << endl;
     }
+}
 
+class Warehouse
+{
+    int WarehouseID;
+    string WarehouseLocation;
+    int Capacity;
+
+public:
+    Warehouse()
+    {
+        WarehouseID = 0;
+        WarehouseLocation = "";
+        Capacity = 0;
+    }
+
+    Warehouse(int wareID, string Location, int cap)
+    {
+        WarehouseID = wareID;
+        WarehouseLocation = Location;
+        Capacity = cap;
+    }
+    void reciveProduct(Product product);
+    void storeProduct(Product protect);
+    void dispachedProduct(Product product);
+};
+
+void Warehouse ::reciveProduct(Product product)
+{
+
+    cout << "\nProduct recived at Warehouse\n";
+
+    storeProduct(product);
 }
 
 int main()
@@ -119,7 +155,6 @@ int main()
 
     Product p1(1000, 4, 4000, "Pan");
     Product p2(1001, 10, 2000, "Shirt");
-
 
     s1.supplyProduct(p1);
     s1.supplyProduct(p2);
