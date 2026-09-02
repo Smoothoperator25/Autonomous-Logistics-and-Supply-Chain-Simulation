@@ -119,6 +119,8 @@ class Warehouse
     int WarehouseID;
     string WarehouseLocation;
     int Capacity;
+    int used;
+    vector<Product> products;
 
 public:
     Warehouse()
@@ -126,6 +128,7 @@ public:
         WarehouseID = 0;
         WarehouseLocation = "";
         Capacity = 0;
+        used = 0;
     }
 
     Warehouse(int wareID, string Location, int cap)
@@ -133,23 +136,105 @@ public:
         WarehouseID = wareID;
         WarehouseLocation = Location;
         Capacity = cap;
+        used = 0;
     }
     void reciveProduct(Product product);
     void storeProduct(Product protect);
-    void dispachedProduct(Product product);
+    int GetUsedSpace()
+    {
+        return used;
+    }
+    void dispachedProduct(int proID, int quan);
+    void displayWarehouse();
 };
 
 void Warehouse ::reciveProduct(Product product)
 {
-
+    if ((used + product.GetQuantaty()) > Capacity)
+    {
+        cout << "Greater than Warehouse capicity\n";
+        return;
+    }
     cout << "\nProduct recived at Warehouse\n";
-
     storeProduct(product);
+}
+
+void Warehouse ::storeProduct(Product product)
+{
+    products.push_back(product);
+
+    used += product.GetQuantaty();
+
+    cout << "\nProduct stored in Warehouse successfully\n\n";
+}
+
+void Warehouse ::dispachedProduct(int proID, int quan)
+{
+    for (int i = 0; i < products.size(); i++)
+    {
+        if (products[i].GetProductID() == proID)
+        {
+            if (quan > products[i].GetQuantaty())
+            {
+                cout << "\nEnough quantaty is not available\n";
+                return;
+            }
+
+            cout << "\nProduct Dispached Successfully\n";
+            cout << "Product ID : " << proID << endl;
+            cout << "Quantity   : " << quan << endl;
+
+            used -= quan; // This is to reduce the space of warehouse
+            return;
+        }
+    }
+
+    cout << "\nProduct Not Found In The Warehouse!!\n";
+}
+
+void Warehouse ::displayWarehouse()
+{
+    cout << "\n======== Warehouse Info =========\n";
+
+    cout << "Warehouse ID    : " << WarehouseID << endl;
+    cout << "Location        : " << WarehouseLocation << endl;
+    cout << "Capicity(Space) : " << Capacity << endl;
+    cout << "Used Space      : " << used << endl;
+    cout << "Available Space : " << Capacity - used << endl;
+
+    cout << "\nStored Products\n";
+
+    if (products.empty())
+    {
+        cout << "No products available" << endl;
+        return;
+    }
+
+    for (int i = 0; i < products.size(); i++)
+    {
+        if (products[i].GetUsedSpace != 0)
+        {
+            products[i].DisplayProduct();
+            cout << endl;
+        }
+    }
+}
+
+vector<Warehouse> createWarehouses() // For creating warehouse
+{
+    vector<Warehouse> AllWarehouses;
+    AllWarehouses.push_back(Warehouse(10, "Pune", 30));
+    AllWarehouses.push_back(Warehouse(11, "Mumbai", 40));
+    AllWarehouses.push_back(Warehouse(12, "Delhi", 20));
+
+    cout << "All the warehouses are LIVE\n\n";
+    return AllWarehouses;
 }
 
 int main()
 {
     system("cls");
+    vector<Warehouse> AllWarehouses = createWarehouses(); // We had already created warehouses
 
     Supplier s1(1, "Kartik Bhand");
 
@@ -163,5 +248,15 @@ int main()
 
     s1.displaySupplier();
     cout << endl;
+
+    AllWarehouses[0].reciveProduct(p1);
+    AllWarehouses[1].reciveProduct(p2);
+
+    AllWarehouses[1].displayWarehouse();
+
+    AllWarehouses[1].dispachedProduct(1001, 10);
+
+    AllWarehouses[1].displayWarehouse();
+
     return 0;
 }

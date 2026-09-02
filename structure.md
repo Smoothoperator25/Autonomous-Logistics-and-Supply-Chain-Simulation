@@ -435,7 +435,8 @@ logistics-simulation/
 ├── data/
 │   └── (file-handling outputs: orders.txt, inventory.txt, etc.)
 └── main.cpp
-```          │       SUPPLIER        │
+```                                 ┌───────────────────────┐
+                                    │       SUPPLIER        │
                                     ├───────────────────────┤
                                     │ - supplierId          │
                                     │ - name                │
