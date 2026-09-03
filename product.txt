@@ -1,0 +1,21 @@
+ProductID   Name                Weight    Price     SupplierID
+101         Laptop               2.5       55000     201
+102         Keyboard             0.8       1200      202
+103         Mouse                0.2       600       201
+104         Monitor              4.5       15000     203
+105         Printer              6.0       12000     202
+106         Webcam               0.3       1800      204
+107         Headphones           0.4       2500      201
+108         SSD                  0.1       4500      205
+109         Hard Disk            0.7       5200      205
+110         Router               0.5       2200      203
+111         USB Cable            0.1       300       202
+112         Power Bank           0.4       1500      204
+113         Smartphone           0.2       30000     206
+114         Tablet               0.5       22000     206
+115         Desktop PC           8.0       65000     201
+116         Graphics Card        1.2       35000     205
+117         WiFi Adapter         0.1       900       203
+118         Microphone           0.6       3200      204
+119         External Hard Drive  0.8       6500      205
+120         UPS                  7.5       8500      202

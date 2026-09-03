@@ -6,7 +6,7 @@ using namespace std;
 class Product
 {
     int ProductID;
-    int Quantaty;
+    float ProductWeight;
     float Price;
     string ProductName;
 
@@ -14,15 +14,15 @@ public:
     Product()
     {
         ProductID = 0;
-        Quantaty = 0;
+        ProductWeight = 0;
         Price = 0.0;
         ProductName = "";
     }
 
-    Product(int id, int q, float pri, string ProName)
+    Product(int id, float weight, float pri, string ProName)
     {
         ProductID = id;
-        Quantaty = q;
+        ProductWeight = weight;
         Price = pri;
         ProductName = ProName;
     }
@@ -31,14 +31,15 @@ public:
     {
         return ProductID;
     }
-    int GetQuantaty()
-    {
-        return Quantaty;
-    }
 
     string GetProductName()
     {
         return ProductName;
+    }
+
+    float GetProductWeight()
+    {
+        return ProductWeight;
     }
 
     void DisplayProduct();
@@ -49,7 +50,7 @@ void Product ::DisplayProduct()
     cout << "Product ID   : " << ProductID << endl;
     cout << "Product Name : " << ProductName << endl;
     cout << "Price        : " << Price << "\n";
-    cout << "Quantaty     : " << Quantaty << endl;
+    cout << "Weight       : " << ProductWeight << endl;
 }
 
 class Supplier
@@ -212,13 +213,31 @@ void Warehouse ::displayWarehouse()
 
     for (int i = 0; i < products.size(); i++)
     {
-        if (products[i].GetUsedSpace != 0)
-        {
-            products[i].DisplayProduct();
-            cout << endl;
-        }
+
+        products[i].DisplayProduct();
+        cout << endl;
     }
 }
+
+class Inventory
+{
+    vector<Product> products;
+    int record;
+
+public:
+    Inventory()
+    {
+        record = 10;
+    }
+
+
+
+};
+
+
+
+
+
 
 vector<Warehouse> createWarehouses() // For creating warehouse
 {

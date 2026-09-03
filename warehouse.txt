@@ -1,0 +1,11 @@
+WarehouseID   Location                 Capacity
+301           Pune                        500
+302           Mumbai                      800
+303           Nagpur                      700
+304           Nashik                      600
+305           Chhatrapati Sambhajinagar   450
+306           Ahilyanagar                 400
+307           Kolhapur                    400
+308           Thane                       600
+309           Navi Mumbai                 700
+310           Amravati                    350
