@@ -1,21 +1,21 @@
-ShipmentID   OrderID   Weight   SourceWarehouse   Destination       Status
-601          501       2.5      301                Pune              Pending
-602          502       0.4      304                Mumbai            Pending
-603          503       4.5      302                Bengaluru         Pending
-604          504       2.4      301                Hyderabad         Pending
-605          505       8.0      303                Nashik            Pending
-606          506       0.8      301                Nagpur            Pending
-607          507       1.0      302                Ahmedabad          Pending
-608          508       0.5      304                Kochi             Pending
-609          509       0.8      302                Delhi             Pending
-610          510       0.2      303                Jaipur             Pending
-611          511       6.0      303                Chennai            Pending
-612          512       1.6      303                Noida              Pending
-613          513       1.2      303                Chandigarh         Pending
-614          514       1.8      304                Surat             Pending
-615          515       0.7      303                Indore             Pending
-616          516       15.0     302                Bhopal             Pending
-617          517       0.5      301                Lucknow            Pending
-618          518       0.6      304                Patna              Pending
-619          519       0.3      302                Visakhapatnam      Pending
-620          520       0.8      304                Aurangabad         Pending
+ShipmentID | OrderID | Weight | SourceWarehouse | Destination   | Status
+601        | 501     | 2.5    | 301             | Pune          | Pending
+602        | 502     | 0.4    | 304             | Mumbai        | Pending
+603        | 503     | 4.5    | 302             | Bengaluru     | Pending
+604        | 504     | 2.4    | 301             | Hyderabad     | Pending
+605        | 505     | 8.0    | 303             | Nashik        | Pending
+606        | 506     | 0.8    | 301             | Nagpur        | Pending
+607        | 507     | 1.0    | 302             | Ahmedabad     | Pending
+608        | 508     | 0.5    | 304             | Kochi         | Pending
+609        | 509     | 0.8    | 302             | Delhi         | Pending
+610        | 510     | 0.2    | 303             | Jaipur        | Pending
+611        | 511     | 6.0    | 303             | Chennai       | Pending
+612        | 512     | 1.6    | 303             | Noida         | Pending
+613        | 513     | 1.2    | 303             | Chandigarh    | Pending
+614        | 514     | 1.8    | 304             | Surat         | Pending
+615        | 515     | 0.7    | 303             | Indore        | Pending
+616        | 516     | 15.0   | 302             | Bhopal        | Pending
+617        | 517     | 0.5    | 301             | Lucknow       | Pending
+618        | 518     | 0.6    | 304             | Patna         | Pending
+619        | 519     | 0.3    | 302             | Visakhapatnam | Pending
+620        | 520     | 0.8    | 304             | Aurangabad    | Pending

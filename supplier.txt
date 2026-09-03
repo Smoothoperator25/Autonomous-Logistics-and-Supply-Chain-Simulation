@@ -1,7 +1,7 @@
-SupplierID   SupplierName                    Products
-201          Dell Technologies               101,103,107,115
-202          HP Inc.                         102,105,111,120
-203          TP-Link                         104,110,117
-204          Logitech                        106,112,118
-205          Western Digital                 108,109,116,119
-206          Samsung Electronics             113,114
+SupplierID | SupplierName        | Products
+201        | Dell Technologies   | 101,103,107,115
+202        | HP Inc.             | 102,105,111,120
+203        | TP-Link             | 104,110,117
+204        | Logitech            | 106,112,118
+205        | Western Digital     | 108,109,116,119
+206        | Samsung Electronics | 113,114

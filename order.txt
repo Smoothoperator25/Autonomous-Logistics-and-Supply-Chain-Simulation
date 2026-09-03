@@ -1,21 +1,21 @@
-OrderID   CustomerID   ProductID   Quantity   Status
-501       401          101         1          Pending
-502       402          113         2          Pending
-503       403          104         1          Pending
-504       404          102         3          Pending
-505       405          115         1          Pending
-506       406          107         2          Pending
-507       407          110         2          Pending
-508       408          114         1          Pending
-509       409          103         4          Pending
-510       410          108         2          Pending
-511       411          105         1          Pending
-512       412          119         2          Pending
-513       413          116         1          Pending
-514       414          118         3          Pending
-515       415          109         1          Pending
-516       416          120         2          Pending
-517       417          111         5          Pending
-518       418          106         2          Pending
-519       419          117         3          Pending
-520       420          112         2          Pending
+OrderID | CustomerID | ProductID | Quantity | Status
+501     | 401        | 101       | 1        | Pending
+502     | 402        | 113       | 2        | Pending
+503     | 403        | 104       | 1        | Pending
+504     | 404        | 102       | 3        | Pending
+505     | 405        | 115       | 1        | Pending
+506     | 406        | 107       | 2        | Pending
+507     | 407        | 110       | 2        | Pending
+508     | 408        | 114       | 1        | Pending
+509     | 409        | 103       | 4        | Pending
+510     | 410        | 108       | 2        | Pending
+511     | 411        | 105       | 1        | Pending
+512     | 412        | 119       | 2        | Pending
+513     | 413        | 116       | 1        | Pending
+514     | 414        | 118       | 3        | Pending
+515     | 415        | 109       | 1        | Pending
+516     | 416        | 120       | 2        | Pending
+517     | 417        | 111       | 5        | Pending
+518     | 418        | 106       | 2        | Pending
+519     | 419        | 117       | 3        | Pending
+520     | 420        | 112       | 2        | Pending

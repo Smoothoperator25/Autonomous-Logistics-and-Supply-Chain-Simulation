@@ -1,21 +1,21 @@
-CustomerID   CustomerName          Address
-401          Aarav Sharma         Pune
-402          Riya Patil           Mumbai
-403          Aditya Kulkarni      Bengaluru
-404          Sneha Deshmukh       Hyderabad
-405          Rahul Mehta          Nashik
-406          Ananya Joshi         Nagpur
-407          Karan Shah            Ahmedabad
-408          Priya Nair            Kochi
-409          Rohan Gupta           Delhi
-410          Isha Verma            Jaipur
-411          Siddharth Rao         Chennai
-412          Neha Kapoor           Noida
-413          Arjun Malhotra        Chandigarh
-414          Meera Iyer            Surat
-415          Yash Thakur           Indore
-416          Kavya Menon           Bhopal
-417          Manav Jain            Lucknow
-418          Anjali Singh          Patna
-419          Varun Reddy           Visakhapatnam
-420          Pooja Mishra          Aurangabad
+CustomerID | CustomerName    | Address
+401        | Aarav Sharma    | Pune
+402        | Riya Patil      | Mumbai
+403        | Aditya Kulkarni | Bengaluru
+404        | Sneha Deshmukh  | Hyderabad
+405        | Rahul Mehta     | Nashik
+406        | Ananya Joshi    | Nagpur
+407        | Karan Shah      | Ahmedabad
+408        | Priya Nair      | Kochi
+409        | Rohan Gupta     | Delhi
+410        | Isha Verma      | Jaipur
+411        | Siddharth Rao   | Chennai
+412        | Neha Kapoor     | Noida
+413        | Arjun Malhotra  | Chandigarh
+414        | Meera Iyer      | Surat
+415        | Yash Thakur     | Indore
+416        | Kavya Menon     | Bhopal
+417        | Manav Jain      | Lucknow
+418        | Anjali Singh    | Patna
+419        | Varun Reddy     | Visakhapatnam
+420        | Pooja Mishra    | Aurangabad
